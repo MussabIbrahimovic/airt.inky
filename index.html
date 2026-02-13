@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRT — Search Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="theme-dark home-page">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <header class="top-nav">
+    <a class="brand" href="./index.html" aria-label="Airt homepage">
+      <img src="./assets/airt-logo.svg" alt="airt logo" />
+    </a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main class="home-main">
+    <img class="hero-logo" src="./assets/airt-wordmark.svg" alt="airt.ink search reimagined" />
+    <h1>Search, the Airt way.</h1>
+    <form class="search-shell" action="./search.html" method="GET">
+      <input
+        id="home-query"
+        type="search"
+        name="q"
+        placeholder="Search the web"
+        required
+        autocomplete="off"
+      />
+      <button type="submit">Search</button>
+    </form>
+  </main>
+
+  <footer>
+    <a href="./about.html">About</a>
+    <a href="./about.html#privacy">Privacy</a>
+  </footer>
+
+  <script src="./ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRT Search Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="theme-dark results-page">
+  <header class="results-header">
+    <a class="brand" href="./index.html" aria-label="Airt homepage">
+      <img src="./assets/airt-logo.svg" alt="airt logo" />
+    </a>
+    <form class="search-shell header-search" action="./search.html" method="GET">
+      <input id="results-query" type="search" name="q" placeholder="Search Airt" required />
+      <button type="submit">Search</button>
+    </form>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main class="results-main">
+    <section class="results-card">
+      <h1>AIRT results for <span id="query-display"></span></h1>
+      <p>
+        Airt keeps your branded search page at <strong>airt.ink</strong> and opens Google-powered
+        results in a new tab for full compatibility.
+      </p>
+      <div class="cta-row">
+        <a id="google-link" class="primary-btn" target="_blank" rel="noopener noreferrer">Open Google Results</a>
+        <a id="google-link-same" class="secondary-btn" rel="noopener noreferrer">Open in This Tab</a>
+      </div>
+      <p class="helper">Tip: bookmark this page to keep searching from airt.ink.</p>
+    </section>
+
+    <section class="results-note">
+      <h2>Why no embedded Google iframe?</h2>
+      <p>
+        Google blocks being embedded in iframes via security headers. This launcher preserves Airt
+        branding while still using Google's search backend.
+      </p>
+    </section>
+  </main>
+
+  <script src="./ui.js"></script>
+</body>
+</html>
